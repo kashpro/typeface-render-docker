@@ -1,0 +1,13 @@
+version: "3"
+services:
+  render:
+    build: "./render/"
+    restart: "always"
+    ports:
+      - "3003:3003"
+    environment:
+      - "PORT=3003"
+    volumes:
+      - "/app/node_modules/" # !!! не перезаписывать node_modules внутри контейнера
+      - "./render/:/app/"
+    

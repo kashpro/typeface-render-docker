@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "gm": "^1.25.0"
+  },
+  "scripts": {
+    "start": "nodemon -L --exitcrash index.js"
+  }
+}
